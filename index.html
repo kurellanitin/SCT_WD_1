@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Responsive Landing — SCT Task 01</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Fixed navigation -->
+  <header class="site-header" id="siteHeader" role="banner">
+    <div class="container nav-wrap">
+      <a href="#" class="logo" aria-label="SkillCraft Technology - Demo">
+        <span class="logo-mark" aria-hidden="true">SCT</span>
+        <span class="logo-text">SkillCraft</span>
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Primary">
+        <ul id="navList">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="navList" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page content sections -->
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Responsive Landing Page</h1>
+        <p class="lead">Interactive navigation that changes style on scroll & hover. Fixed and visible across pages.</p>
+        <a class="btn" href="#features">See features</a>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About this task</h2>
+        <p>Build a navigation menu that visually responds to scrolling and hovering. The nav stays fixed at top for a consistent UX.</p>
+      </div>
+    </section>
+
+    <section id="features" class="section features">
+      <div class="container grid">
+        <article>
+          <h3>Interactive</h3>
+          <p>Links highlight on hover and the header changes color as you scroll down the page.</p>
+        </article>
+        <article>
+          <h3>Responsive</h3>
+          <p>Hamburger menu for small screens and a fixed header on all viewports.</p>
+        </article>
+        <article>
+          <h3>Accessible</h3>
+          <p>Keyboard focus styles and ARIA attributes for the hamburger toggle.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact / Submission</h2>
+        <p>Push your project to a public GitHub repo named <code>SCT_WD_1</code> (SCT_TrackCode_TaskNumber).</p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© SkillCraft Technology — Demo Landing • Task 01</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
